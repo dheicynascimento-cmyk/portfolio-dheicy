@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- Portfólio Pessoal - Dheicy Gulchinski -->
+<!-- Disciplina: Fundamentos da Programação Web - UNINTER -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dheicy Gulchinski | Portfólio</title>
+  <!-- Arquivo de estilos externo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO / NAVEGAÇÃO FIXA ========== -->
+  <header id="header">
+    <nav class="navbar">
+      <!-- Logo / Nome no menu -->
+      <div class="nav-logo">DG</div>
+
+      <!-- Botão hambúrguer para dispositivos móveis (controlado pelo JS) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Links de navegação por âncoras (Anchor Navigation) -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+        <li><a href="#formacao" class="nav-link">Formação</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <!-- Botão de alternância de tema claro/escuro -->
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+            🌙
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== SEÇÃO HERO (APRESENTAÇÃO) ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Avatar com iniciais -->
+      <div class="hero-avatar">DG</div>
+      <h1 class="hero-title">Dheicy Gulchinski</h1>
+      <p class="hero-subtitle">Analista em formação · Dados & BI · Segurança da Informação</p>
+      <p class="hero-description">
+        Profissional em transição para TI, com foco em Análise de Dados,
+        Inteligência Artificial, LGPD e Segurança Cibernética.
+      </p>
+      <!-- Botão que leva à seção de contato -->
+      <a href="#contato" class="btn-hero">Entre em Contato</a>
+    </div>
+    <!-- Indicador de rolagem -->
+    <div class="scroll-indicator">↓</div>
+  </section>
+
+  <!-- ========== SEÇÃO: SOBRE MIM ========== -->
+  <section id="sobre" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-grid">
+
+        <!-- Card de informações pessoais -->
+        <div class="about-card">
+          <h3>👩‍💻 Quem sou eu</h3>
+          <p>
+            Sou a Dheicy, moradora de Canoinhas – SC, graduanda em
+            <strong>Análise e Desenvolvimento de Sistemas</strong> pela UNINTER.
+            Tenho mais de 7 anos de experiência em auditoria de caixa, gestão
+            administrativa e conformidade regulatória, e estou em transição
+            para a área de Tecnologia da Informação.
+          </p>
+          <p>
+            Meu foco está em <strong>Análise de Dados (BI)</strong>,
+            <strong>Inteligência Artificial</strong>, <strong>LGPD</strong>
+            e <strong>Segurança Cibernética</strong>. Perfil analítico,
+            ágil no aprendizado de novas ferramentas e apaixonada por
+            transformar dados em decisões.
+          </p>
+        </div>
+
+        <!-- Card de informações de contato/pessoais -->
+        <div class="about-card">
+          <h3>📋 Informações</h3>
+          <ul class="info-list">
+            <li><span class="info-label">📍 Cidade:</span> Canoinhas, SC</li>
+            <li><span class="info-label">📧 E-mail:</span>
+              <a href="mailto:dheicynascimento@gmail.com">dheicynascimento@gmail.com</a>
+            </li>
+            <li><span class="info-label">📱 Telefone:</span> (41) 98857-7128</li>
+            <li><span class="info-label">💼 LinkedIn:</span>
+              <a href="https://linkedin.com/in/dheicy-gulchinski-b4119a172" target="_blank">
+                linkedin.com/in/dheicy-gulchinski
+              </a>
+            </li>
+            <li><span class="info-label">🚗 CNH:</span> Categoria B</li>
+            <li><span class="info-label">🏠 Regime:</span> Híbrido ou Home Office</li>
+          </ul>
+        </div>
+
+        <!-- Card de hobbies e interesses -->
+        <div class="about-card">
+          <h3>🎯 Interesses & Hobbies</h3>
+          <div class="hobbies-grid">
+            <span class="hobby-tag">📊 Análise de Dados</span>
+            <span class="hobby-tag">🔐 Cybersecurity</span>
+            <span class="hobby-tag">🤖 Inteligência Artificial</span>
+            <span class="hobby-tag">📚 Leitura Técnica</span>
+            <span class="hobby-tag">🌐 Inglês para TI</span>
+            <span class="hobby-tag">💡 Automação</span>
+            <span class="hobby-tag">🛡️ LGPD & Privacidade</span>
+            <span class="hobby-tag">📈 Power BI</span>
+          </div>
+        </div>
+
+        <!-- Card de habilidades técnicas -->
+        <div class="about-card">
+          <h3>⚙️ Habilidades Técnicas</h3>
+          <!-- Barras de progresso animadas via CSS -->
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>Python</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>Power BI</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>Excel Avançado</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>SQL / MySQL</span><span>55%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>HTML5 / JS</span><span>40%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>Segurança / LGPD</span><span>60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+          </div>
+        </div>
+
+      </div><!-- fim about-grid -->
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: FORMAÇÃO ========== -->
+  <section id="formacao" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Formação</h2>
+
+      <!-- Bloco: Formação Educacional -->
+      <h3 class="subsection-title">🎓 Educação</h3>
+      <div class="timeline">
+
+        <!-- Item de formação 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Em Andamento</span>
+            <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+            <p class="timeline-institution">UNINTER – Centro Universitário Internacional · Canoinhas, SC</p>
+            <p>
+              Foco acadêmico em Engenharia de Software, Estruturas de Dados,
+              Lógica de Programação, Modelagem de Bancos de Dados e
+              Segurança da Informação.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item de formação 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Em Andamento</span>
+            <h4>Extensão Universitária em Língua Inglesa</h4>
+            <p class="timeline-institution">UNINTER – Centro Universitário Internacional · Canoinhas, SC</p>
+            <p>
+              Desenvolvimento de proficiência com ênfase em comunicação
+              corporativa global, termos técnicos de TI e leitura de
+              documentações internacionais.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- fim timeline educação -->
+
+      <!-- Bloco: Certificações -->
+      <h3 class="subsection-title">🏅 Certificações</h3>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon">🐍</div>
+          <h4>Python Essentials 1</h4>
+          <p class="cert-issuer">Cisco Networking Academy / OpenEDG Python Institute</p>
+          <p class="cert-date">Out/2025</p>
+          <p>Desenvolvimento, depuração e refatoração de programas em Python 3;
+             lógica algorítmica e manipulação de scripts.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🔐</div>
+          <h4>Foundations of Cybersecurity</h4>
+          <p class="cert-issuer">Google / Coursera</p>
+          <p class="cert-date">Out/2025</p>
+          <p>Princípios de segurança da informação, análise de vulnerabilidades,
+             arquitetura de redes e mitigação de riscos cibernéticos.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📊</div>
+          <h4>Fundamentos de Business Intelligence</h4>
+          <p class="cert-issuer">DIO – Digital Innovation One</p>
+          <p class="cert-date">Set/2025</p>
+          <p>Arquitetura de BI, modelagem dimensional, processos de ETL
+             e estruturação de dados para suporte à tomada de decisão.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📈</div>
+          <h4>Introdução ao Excel e Power BI</h4>
+          <p class="cert-issuer">DIO / Klabin</p>
+          <p class="cert-date">Set/2025</p>
+          <p>Construção de dashboards analíticos interativos; higienização
+             e transformação de grandes volumes de dados operacionais.</p>
+        </div>
+
+      </div><!-- fim cert-grid -->
+
+      <!-- Bloco: Idiomas -->
+      <h3 class="subsection-title">🌍 Idiomas</h3>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <span class="lang-flag">🇧🇷</span>
+          <h4>Português</h4>
+          <p>Nativo</p>
+          <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇺🇸</span>
+          <h4>Inglês</h4>
+          <p>Técnico para TI – Em desenvolvimento</p>
+          <div class="lang-bar"><div class="lang-fill" style="width:45%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: PORTFÓLIO ========== -->
+  <section id="portfolio" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Portfólio</h2>
+      <p class="section-desc">
+        Projetos e trabalhos desenvolvidos ao longo da formação acadêmica e
+        das certificações. Clique nos cards para saber mais.
+      </p>
+
+      <!-- Grade de projetos -->
+      <div class="projects-grid">
+
+        <!-- Projeto 1 -->
+        <div class="project-card">
+          <div class="project-header project-py">
+            <span class="project-icon">🐍</span>
+          </div>
+          <div class="project-body">
+            <h4>Scripts Python – Automação</h4>
+            <p>
+              Exercícios e scripts de automação desenvolvidos durante a
+              certificação Python Essentials 1 pela Cisco/OpenEDG.
+              Foco em lógica algorítmica e manipulação de dados.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python 3</span>
+              <span class="tag">Lógica</span>
+              <span class="tag">Automação</span>
+            </div>
+            <a href="https://github.com/dheicygulchinski" target="_blank" class="project-link">
+              Ver no GitHub →
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card">
+          <div class="project-header project-bi">
+            <span class="project-icon">📊</span>
+          </div>
+          <div class="project-body">
+            <h4>Dashboard Power BI – Klabin</h4>
+            <p>
+              Dashboard analítico interativo construído durante o curso
+              DIO/Klabin. Higienização, tratamento e visualização de
+              dados operacionais reais de grande volume.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Excel</span>
+              <span class="tag">ETL</span>
+            </div>
+            <a href="https://github.com/dheicygulchinski" target="_blank" class="project-link">
+              Ver no GitHub →
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card">
+          <div class="project-header project-sec">
+            <span class="project-icon">🔐</span>
+          </div>
+          <div class="project-body">
+            <h4>Estudo de Cybersecurity – Google</h4>
+            <p>
+              Relatório de análise de vulnerabilidades e arquitetura de
+              proteção de redes desenvolvido como trabalho prático da
+              certificação Google Foundations of Cybersecurity.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Segurança</span>
+              <span class="tag">Redes</span>
+              <span class="tag">LGPD</span>
+            </div>
+            <a href="https://github.com/dheicygulchinski" target="_blank" class="project-link">
+              Ver no GitHub →
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 4: Este portfólio -->
+        <div class="project-card">
+          <div class="project-header project-web">
+            <span class="project-icon">🌐</span>
+          </div>
+          <div class="project-body">
+            <h4>Este Portfólio – HTML5/CSS3/JS</h4>
+            <p>
+              Portfólio online desenvolvido do zero com HTML5 semântico,
+              CSS3 puro (sem frameworks) e JavaScript vanilla.
+              Trabalho prático da disciplina Fundamentos da Programação Web.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/dheicygulchinski" target="_blank" class="project-link">
+              Ver no GitHub →
+            </a>
+          </div>
+        </div>
+
+      </div><!-- fim projects-grid -->
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: CONTATO ========== -->
+  <section id="contato" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="section-desc">
+        Quer conversar sobre oportunidades ou projetos? Preencha o formulário
+        abaixo ou use um dos canais diretos.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Informações de contato direto -->
+        <div class="contact-info">
+          <h3>📬 Canais Diretos</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon">📧</span>
+              <a href="mailto:dheicynascimento@gmail.com">dheicynascimento@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">📱</span>
+              <a href="tel:+5541988577128">(41) 98857-7128</a>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <a href="https://linkedin.com/in/dheicy-gulchinski-b4119a172" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <span class="contact-icon">💻</span>
+              <a href="https://github.com/dheicygulchinski" target="_blank">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulário de contato com validação JavaScript -->
+        <div class="contact-form-wrap">
+          <form id="contactForm" novalidate>
+
+            <!-- Campo Nome -->
+            <div class="form-group">
+              <label for="nome">Nome *</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+              <!-- Mensagem de erro exibida via JS -->
+              <span class="form-error" id="erroNome"></span>
+            </div>
+
+            <!-- Campo E-mail -->
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemplo@dominio.com"
+                autocomplete="email"
+              />
+              <span class="form-error" id="erroEmail"></span>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+              <span class="form-error" id="erroMensagem"></span>
+            </div>
+
+            <!-- Botão de envio -->
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+
+          </form>
+
+          <!-- Modal de confirmação (exibido via JS após envio bem-sucedido) -->
+          <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-box">
+              <div class="modal-icon">✅</div>
+              <h3>Mensagem enviada com sucesso!</h3>
+              <p>Obrigada pelo contato, Dheicy responderá em breve.</p>
+              <button class="btn-modal-close" id="modalClose">Fechar</button>
+            </div>
+          </div>
+
+        </div><!-- fim contact-form-wrap -->
+
+      </div><!-- fim contact-grid -->
+    </div>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="footer">
+    <p>© 2026 Dheicy Gulchinski · Desenvolvido com HTML5, CSS3 e JavaScript puro</p>
+    <p>Atividade Prática – Fundamentos da Programação Web · UNINTER</p>
+  </footer>
+
+  <!-- Script JavaScript externo (carregado ao final do body para melhor performance) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
